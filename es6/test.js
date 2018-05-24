@@ -12,5 +12,5 @@ function say({ subject, verb, object}) {
 }
 
 for (let s of sentences) {
-    say(s)
+    say(s);
 }
