@@ -7,7 +7,8 @@ node_modules
 
 #macOS 폴더 속성
 .DS_Store
-
+dist/*
+public/dist/*
 #임시파일
 *.tmp
 *~
