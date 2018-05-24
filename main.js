@@ -1,0 +1,24 @@
+$(document).ready(function(){
+    'use strict';
+    console.log("Hello HongE JavaScript next nickname is hong3")
+    paper.install(window);
+    paper.setup(document.getElementById('mainCanvas'))
+
+    //TODO
+    var tool = new Tool();
+    var c = Shape.Circle(200,200,80);
+    c.fillColor = 'black';
+    var text = new PointText(200, 200);
+    text.justification = 'center';
+    text.fillColor = 'white';
+    text.fontSize = 20;
+    text.content = 'hello world';
+
+    tool.onMouseDown = function(event) {
+        var c = Shape.Circle(event.point.x-10, event.point.y+50, 20);
+        c.fillColor = 'green';
+    };
+ 
+    paper.view.draw();
+});
+
